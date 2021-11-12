@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 650px;
+}
+
+.navegador{
+    position: fixed;
+    background-color: #0C0C0B;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegador nav{
+    padding: 8px;
+}
+
+.navegador ul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+}
+
+.navegador ul li{
+  list-style: none;
+}
+
+
+.navegador a{
+    text-decoration: none;
+    color: #EEEBDD;
+    display: block;
+    margin-left: 150px;
+    font-size: 20px;
+    transition: all 200ms;
+}
+
+.navegador a:hover{
+    transform: scale(1.3);
+    color: #B61919;
+}
+
+.texto{
+    color: white;
+}
+
+body{
+    background-image: url(Imágenes/Media\ cara.jpg);
+    background-size: 500px;
+    background-attachment:fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: black;
+}
+
