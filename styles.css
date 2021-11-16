@@ -5,13 +5,14 @@
 /* INICIO ESTILOS HEADER */
 header{
     width: 100%;
-    height: 650px;
+    height: 40rem;
 }
 
 .navegador{
     position: fixed;
     background-color: #0C0C0B;
     width: 100%;
+    height: 3.75rem;
     z-index: 2;
     display: flex;
     justify-content: space-between;
@@ -31,14 +32,19 @@ header{
   list-style: none;
 }
 
+.navegador .principal{
+    color: #B61919;
+    scale: 1.3;
+}
+
 .navegador a{
+    text-align: center;
+    width: 20rem;
     text-decoration: none;
     color: #EEEBDD;
     display: block;
-    margin-left: 150px;
     font-size: 20px;
     transition: all 200ms;
-
 }
 
 .navegador a:hover{
@@ -47,6 +53,7 @@ header{
 }
 
 .name1, .name2{
+    width: 10rem;
     position: absolute;
     z-index: 1;
     font-family: 'Fredericka the Great', cursive;
@@ -55,8 +62,8 @@ header{
 }
 
 .name1{
-    margin-top: 144px;
-    margin-left: 160px;
+    margin-top: 9rem;
+    margin-left: 10rem;
 }
 
 .name2{
@@ -71,7 +78,11 @@ header{
 body{
     background-image: url(imágenes/Black&White7.jpg);
     background-size: 100%;
-    background-attachment:scroll;
+    background-attachment:fixed;
+}
+
+main{
+    height: 10rem;
 }
 
 .presentacion{
@@ -103,12 +114,12 @@ h3{
 
 /* FIN ESTILOS BODY */
 
-
 /* INICIO ESTILOS FOOTER */
 
 footer{
     width: 99.8%;
-    border: 1px black solid;
+    height: 37.5rem;
+    border: 1px #0C0C0B solid;
     background-color: #0C0C0B;
     color: white;
 }
@@ -125,19 +136,11 @@ footer a{
     margin-right: 58px;
 }
 
-p{
-    /* margin-top: 10px; 
-    padding-right: 50px;
-    font-size: 20px;
-    opacity: 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(252, 246, 246);
-    background-color: #ccc;*/
-    display: block;
+footer p{
     height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-size: 18px;
     letter-spacing: 1px;
     text-shadow: 0px 0px 1px #CCCC;
     border: 3px solid white;
@@ -145,7 +148,6 @@ p{
     background: #f4f7fe;
     position: absolute;
     padding: 10px;
-    margin-left: -70px; 
     margin-top: 8px;
     cursor: pointer;
     transform: translateY(-80%); 
@@ -153,20 +155,35 @@ p{
     transition: all 200ms;
 }
 
+.insta{
+    margin-left: -63px;
+}
+
+.youtu{
+    margin-left: -57px;
+}
+
+.outlook{
+    margin-left: -80px;
+}
+
+
 .email:hover p{
     opacity: 1;
-    color: #0C0C0B;
+    color: white;
+    background-color: #4C4746;
     transform: translateY(0%);
+    cursor: unset;
 }
-.instagram:hover p{
-    opacity: 1;
-    color: #0C0C0B;
-    transform: translateY(0%);
-} 
-.youtube:hover p{
-    opacity: 1;
-    color: #0C0C0B;
-    transform: translateY(0%);
+.email span:hover{
+    color: #CBAA23;
+}
+.instagram span:hover{
+    color: #CBAA23;
+}
+
+.youtube span:hover{
+    color: #CBAA23;
 }
 
 
@@ -184,14 +201,13 @@ p{
 }
 
 .icon-location{
-    margin-top: 80px;
+    margin-top: 65px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
 }
 
 .ubication iframe{
-    width: 40%;
+    width: 100%;
     height: 300px;
     margin-top: 30px;
     border-radius: 5px;
@@ -202,6 +218,13 @@ p{
 .maps{
     display: flex;
     justify-content: space-around;
+    /* margin-bottom: 5px; */
     
+}
+
+.icopy{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 /* FIN ESTILOS FOOTER */
