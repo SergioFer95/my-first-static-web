@@ -4,52 +4,73 @@
 
 /* INICIO ESTILOS HEADER */
 header{
+    display: inline-flex;
     width: 100%;
-    height: 40rem;
-}
-
-.navegador{
+    height: 90px;
     position: fixed;
-    background-color: #0C0C0B;
-    width: 100%;
-    height: 3.75rem;
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
+    background-color: black;
+
+    border: 4px solid blue;
+
+    #navbar{
+        display: inline-flex;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 3.75rem;
+
+        padding: 8px;
+        
+        border: 4px solid red;
+
+
+        ul{
+            display: flex;
+            border: 4px solid pink;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display:flex;
+
+            li{
+                border: 2px solid grey;
+                list-style: none;
+
+
+                a{
+                    border: 1px solid orange;
+
+                    text-align: center;
+                    width: 20rem;
+                    text-decoration: none;
+                    color: #EEEBDD;
+                    display: block;
+                    font-size: 20px;
+                    transition: all 200ms;
+
+                    &:hover{
+                        transform: scale(1.3);
+                        color: #B61919;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.navegador nav{
-    padding: 8px;
-}
-
-.navegador ul{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display:flex;
-}
-
-.navegador ul li{
-  list-style: none;
+main{
+    background-image: url(../Imágenes/Black&White7.jpg);
+    background-size: 100%;
+    background-attachment:fixed;
+    
+    width: 100%;
+    height: 500px;
+    background-color: yellowgreen;
 }
 
 .navegador .principal{
     color: #B61919;
     scale: 1.3;
-}
-
-.navegador a{
-    text-align: center;
-    width: 20rem;
-    text-decoration: none;
-    color: #EEEBDD;
-    display: block;
-    font-size: 20px;
-    transition: all 200ms;
-}
-
-.navegador a:hover{
-    transform: scale(1.3);
-    color: #B61919;
 }
 
 .name1, .name2{
@@ -76,14 +97,12 @@ header{
 /* INICIO ESTILOS BODY */
 
 body{
-    background-image: url(imágenes/Black&White7.jpg);
-    background-size: 100%;
-    background-attachment:fixed;
+    
 }
 
-main{
-    height: 10rem;
-}
+// main{
+    // height: 10rem;
+// }
 
 .presentacion{
     display: block;
