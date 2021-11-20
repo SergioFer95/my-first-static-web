@@ -1,61 +1,58 @@
-*{
+*{ 
     margin: 0;
-    padding: 0;
 }
+
+/* INICIO ESTILOS HEADER */
 
 header{
-    width: 100%;
-    height: 3.813rem;
-}
-
-/* ESTILOS DEL NAVEGADOR */
-
-.navegador{
-    position: fixed;
-    background-color: #0C0C0B;
-    width: 100%;
-    z-index: 2;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+
+    #navbar{
+        display: flex;
+
+        width: 100%;
+        min-height: 4.375rem;
+        padding: 5px;
+
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            li{
+                list-style: none;
+                margin-bottom: 15px;
+
+
+                a{
+                    
+                    // border: 1px solid orange;
+
+                    text-align: center;
+                    width: 20rem;
+                    text-decoration: none;
+                    color: #EEEBDD;
+                    display: block;
+                    font-size: 21px;
+                    transition: all 200ms;
+                   
+
+                    &:hover{
+                        transform: scale(1.3);
+                        color: #B61919;
+                    }
+                }
+            }
+        }
+    }
 }
-
-.navegador nav{
-    padding: 8px;
-}
-
-.navegador ul{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display:flex;
-}
-
-.navegador ul li{
-  list-style: none;
-}
-
-.navegador .gallery{
-    color: #B61919;
-    scale: 1.3;
-}
-
-.navegador a{
-    text-align: center;
-    width: 20rem;
-    margin-left: 13px;
-    text-decoration: none;
-    color: #EEEBDD;
-    display: block;
-    font-size: 20px;
-    transition: all 200ms;
-}
-
-.navegador a:hover{
-    transform: scale(1.3);
-    color: #B61919;
-}
-
-/* fIN ESTILOS DEL NAVEGADOR */
-
 
 /* INICIO ESTILOS DEL MAIN */
 body{

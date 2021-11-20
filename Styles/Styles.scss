@@ -3,50 +3,46 @@
 }
 
 /* INICIO ESTILOS HEADER */
+
 header{
-    display: inline-flex;
+    display: flex;
     width: 100%;
-    height: 90px;
+    height: 4rem;
     position: fixed;
     z-index: 2;
     background-color: black;
 
-    border: 4px solid blue;
-
     #navbar{
-        display: inline-flex;
-        justify-content: space-between;
+        display: flex;
 
         width: 100%;
-        height: 3.75rem;
-
-        padding: 8px;
-        
-        border: 4px solid red;
+        min-height: 4.375rem;
+        padding: 5px;
 
 
         ul{
             display: flex;
-            border: 4px solid pink;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
 
             li{
-                border: 2px solid grey;
                 list-style: none;
+                margin-bottom: 15px;
 
 
                 a{
-                    border: 1px solid orange;
+                    
+                    // border: 1px solid orange;
 
                     text-align: center;
                     width: 20rem;
                     text-decoration: none;
                     color: #EEEBDD;
                     display: block;
-                    font-size: 20px;
+                    font-size: 21px;
                     transition: all 200ms;
+                   
 
                     &:hover{
                         transform: scale(1.3);
@@ -58,78 +54,47 @@ header{
     }
 }
 
+/* FIN ESTILOS PARA HEADER */
+
+
+/* INICIO ESTILOS MAIN */
+
 main{
+    display: flex;
+    width: 100%;
+    height: 43.75rem;
     background-image: url(../Imágenes/Black&White7.jpg);
     background-size: 100%;
     background-attachment:fixed;
     
-    width: 100%;
-    height: 500px;
-    background-color: yellowgreen;
+    .name1{
+        margin-top: 9rem;
+        margin-left: 10rem;
+    
+        width: 10rem;
+        position: absolute;
+        z-index: 1;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 50px;
+        color: white
+    }
+    
+    .name2{
+        margin-top: 18.75rem;
+        margin-left: 62.5rem;
+    
+        width: 10rem;
+        position: absolute;
+        z-index: 1;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 50px;
+        color: white
+    }
 }
 
-.navegador .principal{
-    color: #B61919;
-    scale: 1.3;
-}
-
-.name1, .name2{
-    width: 10rem;
-    position: absolute;
-    z-index: 1;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 50px;
-    color: white
-}
-
-.name1{
-    margin-top: 9rem;
-    margin-left: 10rem;
-}
-
-.name2{
-    margin-top: 300px;
-    margin-left: 1000px;
-}
-
-/* FIN ESTILOS PARA HEADER */
-
-/* INICIO ESTILOS BODY */
+/* FIN ESTILOS MAIN */
 
 
-
-// main{
-    // height: 10rem;
-// }
-
-.presentacion{
-    display: block;
-    text-align: center;
-    width: 90%;
-    border: 1px red solid;
-    border-radius: 5px;
-    background-color: #D1D1CF;
-    margin:0 auto;
-    margin-bottom: 30px;
-}
-
-.material{
-    display: block;
-    text-align: center;
-    width: 90%;
-    border: 1px red solid;
-    border-radius: 5px;
-    background-color: #D1D1CF;
-    margin:0 auto;
-    margin-bottom: 30px;
-}
-
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 63px;
-}
-
-/* FIN ESTILOS BODY */
 
 /* INICIO ESTILOS FOOTER */
 
@@ -139,69 +104,79 @@ footer{
     border: 1px #0C0C0B solid;
     background-color: #0C0C0B;
     color: white;
+
+    a{
+        text-decoration: none;
+    }
+
+    .insta{
+        margin-left: -3.90rem;
+    }
+    
+    .youtu{
+        margin-left: -3.560rem;
+    }
+    
+    .outlook{
+        margin-left: -5rem;
+    }
+
+    .socialMedia{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 50px;
+        margin-left: 60px;
+        margin-right: 58px;
+
+        .instagram span:hover{
+            color: #CBAA23;
+        }
+
+        .email{
+
+            p{
+                height: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-shadow: 0px 0px 1px #CCCC;
+                border: 3px solid white;
+                box-shadow: 0px 0px 4px #ccc;
+                background: #f4f7fe;
+                position: absolute;
+                padding: 10px;
+                margin-top: 8px;
+                cursor: pointer;
+                transform: translateY(-80%); 
+                opacity: 0;
+                transition: all 200ms;
+        
+                &:hover{
+                    opacity: 1;
+                    color: white;
+                    background-color: #4C4746;
+                    transform: translateY(0%);
+                    cursor: unset;
+                }
+            }
+
+            span{
+                &:hover{
+                    color: #CBAA23;
+                }
+            }
+        }
+        
+        .youtube span:hover{
+            color: #CBAA23;
+        }
+    }
 }
 
-footer a{
-    text-decoration: none;
-}
-
-.socialMedia{
-    display: flex;
-    justify-content:space-around;
-    margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 58px;
-}
-
-footer p{
-    height: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-shadow: 0px 0px 1px #CCCC;
-    border: 3px solid white;
-    box-shadow: 0px 0px 4px #ccc;
-    background: #f4f7fe;
-    position: absolute;
-    padding: 10px;
-    margin-top: 8px;
-    cursor: pointer;
-    transform: translateY(-80%); 
-    opacity: 0;
-    transition: all 200ms;
-}
-
-.insta{
-    margin-left: -63px;
-}
-
-.youtu{
-    margin-left: -57px;
-}
-
-.outlook{
-    margin-left: -80px;
-}
 
 
-.email:hover p{
-    opacity: 1;
-    color: white;
-    background-color: #4C4746;
-    transform: translateY(0%);
-    cursor: unset;
-}
-.email span:hover{
-    color: #CBAA23;
-}
-.instagram span:hover{
-    color: #CBAA23;
-}
 
-.youtube span:hover{
-    color: #CBAA23;
-}
 
 
 .ubication{
