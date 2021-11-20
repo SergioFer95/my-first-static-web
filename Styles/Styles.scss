@@ -148,40 +148,70 @@ footer{
                 padding: 10px;
                 margin-top: 8px;
                 cursor: pointer;
-                transform: translateY(-80%); 
+                transform: translateY(-300%); 
                 opacity: 0;
                 transition: all 200ms;
-        
-                &:hover{
-                    opacity: 1;
-                    color: white;
-                    background-color: #4C4746;
-                    transform: translateY(0%);
-                    cursor: unset;
-                }
             }
 
+            span{
+                &:hover{
+                    color: #CBAA23;
+                    cursor: pointer;
+
+                    p{
+                        opacity: 1;
+                        color: white;
+                        background-color: #4C4746;
+                        transform: translateY(0%);
+                        cursor: unset;
+                    }
+                }
+            }
+        }
+        
+        .youtube{
             span{
                 &:hover{
                     color: #CBAA23;
                 }
             }
         }
-        
-        .youtube span:hover{
-            color: #CBAA23;
-        }
+    }
+
+
+
+
+
+
+    .icopy{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
-
-
-
-
-
 
 .ubication{
     display: block;
     
+    .icon-location{
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .maps{
+        display: flex;
+        justify-content: space-around;
+
+        iframe{
+            width: 100%;
+            height: 300px;
+            margin-top: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px gray;
+            border: 5px solid white
+        }
+    }
 }
 
 .icon-instagram,
@@ -192,31 +222,9 @@ footer{
     color: white;
 }
 
-.icon-location{
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
-}
 
-.ubication iframe{
-    width: 100%;
-    height: 300px;
-    margin-top: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px gray;
-    border: 5px solid white
-}
 
-.maps{
-    display: flex;
-    justify-content: space-around;
-    /* margin-bottom: 5px; */
-    
-}
 
-.icopy{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
+
+
 /* FIN ESTILOS FOOTER */
