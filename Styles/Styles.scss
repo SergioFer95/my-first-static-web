@@ -59,13 +59,17 @@ header{
 
 /* INICIO ESTILOS MAIN */
 
+body{
+    background-color: black;
+    background-image: url(../Imágenes/Black&White7.jpg);
+    background-size: 100%;
+    background-attachment:fixed;
+}
+
 main{
     display: flex;
     width: 100%;
     height: 43.75rem;
-    background-image: url(../Imágenes/Black&White7.jpg);
-    background-size: 100%;
-    background-attachment:fixed;
     
     .name1{
         margin-top: 9rem;
