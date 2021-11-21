@@ -1,18 +1,19 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 /* INICIO ESTILOS HEADER */
 header {
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   position: fixed;
   z-index: 2;
   background-color: black;
-  border: 4px solid red;
 }
 
 header #navbar {
@@ -68,15 +69,22 @@ body {
 }
 
 main {
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
   background-color: black;
   margin-top: 20px;
 }
 
-.pictures {
+main .pictures {
   display: inline-block;
 }
 
-.pictures div {
+main .pictures div {
   float: right;
   margin-top: 3.125rem;
   margin-bottom: 3.125rem;
@@ -84,7 +92,7 @@ main {
   background-color: black;
 }
 
-.pictures .verticales {
+main .pictures .verticales {
   width: 29rem;
   height: 37.5rem;
   display: -webkit-box;
@@ -93,7 +101,8 @@ main {
   margin-right: 8.75rem;
 }
 
-.pictures .horizontales {
+main .pictures .horizontales {
+  margin-top: 6.25rem;
   margin-left: 18.75rem;
   margin-right: 18.75rem;
   display: block;
@@ -184,6 +193,7 @@ footer .socialMedia .email p {
   position: absolute;
   padding: 10px;
   margin-top: 8px;
+  cursor: pointer;
   -webkit-transform: translateY(-300%);
           transform: translateY(-300%);
   opacity: 0;
@@ -202,11 +212,11 @@ footer .socialMedia .email span:hover p {
   background-color: #4C4746;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+  cursor: unset;
 }
 
 footer .socialMedia .youtube span:hover {
   color: #CBAA23;
-  cursor: pointer;
 }
 
 .ubication {

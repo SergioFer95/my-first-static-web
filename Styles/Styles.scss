@@ -25,6 +25,7 @@ $layout_bp_mobile: 480px;
 
 *{ 
     margin: 0;
+    padding: 0;
 }
 
 /* INICIO ESTILOS HEADER */
@@ -57,8 +58,7 @@ header{
 
 
                 a{
-                    
-                    // border: 1px solid orange;
+                
 
                     text-align: center;
                     width: 20rem;

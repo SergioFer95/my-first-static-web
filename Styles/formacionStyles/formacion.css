@@ -1,5 +1,7 @@
+@charset "UTF-8";
 * {
   margin: 0;
+  padding: 0;
 }
 
 /* INICIO ESTILOS HEADER */
@@ -18,6 +20,7 @@ header #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0;
   width: 100%;
   min-height: 4.375rem;
   padding: 5px;
@@ -60,4 +63,219 @@ header #navbar ul li a:hover {
           transform: scale(1.3);
   color: #B61919;
 }
+
+/* fIN ESTILOS DEL NAVEGADOR */
+/* ESTILOS DEL BODY */
+body {
+  background-image: url("./Media cara.jpg");
+  background-size: 36rem;
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 37.5rem;
+  height: 600px;
+}
+
+.texto .experiencia {
+  padding: 10px;
+  color: white;
+  width: 100%;
+  height: 12.5rem;
+  margin-top: 70px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.texto .experiencia h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.texto .experiencia p {
+  letter-spacing: 1px;
+  text-indent: 60px;
+  /*Esto añade sangría a la primera línea del párrafo :) */
+}
+
+.texto .formacion {
+  width: 100%;
+  height: 12.5rem;
+}
+
+.texto .formacion button {
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 5px;
+  border: 5px solid white  #EDECEC;
+  width: 12.5rem;
+  height: 100px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 251px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.texto .formacion button:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  color: #CBAA23;
+  background-color: #4C4746;
+}
+
+/* FIN ESTILOS DEL BODY */
+/* INICIO ESTILOS FOOTER */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  bottom: 0;
+  width: 84.313rem;
+  height: 37.5rem auto;
+  background-color: #0C0C0B;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .insta {
+  margin-left: -3.90rem;
+}
+
+footer .youtu {
+  margin-left: -3.560rem;
+}
+
+footer .outlook {
+  margin-left: -5rem;
+}
+
+footer .icopy {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 58px;
+}
+
+footer .socialMedia .instagram span:hover {
+  color: #CBAA23;
+}
+
+footer .socialMedia .email p {
+  height: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 1px #CCCC;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 4px #ccc;
+          box-shadow: 0px 0px 4px #ccc;
+  background: #f4f7fe;
+  position: absolute;
+  padding: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+  opacity: 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+footer .socialMedia .email span:hover {
+  color: #CBAA23;
+  cursor: pointer;
+}
+
+footer .socialMedia .email span:hover p {
+  opacity: 1;
+  color: white;
+  background-color: #4C4746;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  cursor: unset;
+}
+
+footer .socialMedia .youtube span:hover {
+  color: #CBAA23;
+}
+
+.ubication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ubication .icon-location {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 65px;
+}
+
+.ubication .maps iframe {
+  width: 83.375rem;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px gray;
+          box-shadow: 0px 0px 5px gray;
+  border: 5px solid white;
+}
+
+.icon-instagram,
+.icon-mail,
+.icon-youtube,
+.icon-location {
+  font-size: 60px;
+  color: white;
+}
+
+/* FIN ESTILOS FOOTER */
 /*# sourceMappingURL=formacion.css.map */
