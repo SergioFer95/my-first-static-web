@@ -1,7 +1,5 @@
-// // SCSS Variables
-// $layout_bp_mobile: 360px;
-// $layout_bp_tablet: 800px;
-// $layout_bp_desktop: 1280px;
+
+$layout_bp_mobile: 480px;
 
 // // SCSS Mixins
 // @mixin mobile {
@@ -133,8 +131,7 @@ footer{
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
-    // align-content: space-around;
-    // align-items:center;
+    bottom: 0;
 
     width: 84.313rem;
     height: 37.5rem auto;
@@ -266,10 +263,17 @@ footer{
 
 
 
-/* INICIO USO DE MEDIA QUERYS */
+// /* INICIO USO DE MIXINS Y MEDIA QUERYS */
+
+// @mixin mobile {
+//        @media only screen and (min-width: {$layout_bp_mobile}) {
+//          footer{
+//          position: fixed
+//         }
+//         @content;
+//        }
+//     }
 
 
 
-
-
-/* FIN USO DE MEDIA QUERYS */
+// /* FIN USO DE MEDIA QUERYS */

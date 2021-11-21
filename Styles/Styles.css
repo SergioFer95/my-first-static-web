@@ -113,6 +113,7 @@ footer {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  bottom: 0;
   width: 84.313rem;
   height: 37.5rem auto;
   background-color: #0C0C0B;
@@ -239,6 +240,4 @@ footer .socialMedia .youtube span:hover {
 }
 
 /* FIN ESTILOS FOOTER */
-/* INICIO USO DE MEDIA QUERYS */
-/* FIN USO DE MEDIA QUERYS */
 /*# sourceMappingURL=Styles.css.map */

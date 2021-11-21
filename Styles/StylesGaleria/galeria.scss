@@ -11,6 +11,7 @@ header{
     position: fixed;
     z-index: 2;
     background-color: black;
+    border: 4px solid red;
 
     #navbar{
         display: flex;
@@ -106,79 +107,126 @@ iframe{
 /* INICIO ESTILOS FOOTER */
 
 footer{
-    width: 99.8%;
-    height: 37.5rem;
-    border: 1px #0C0C0B solid;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    bottom: 0;
+
+    width: 84.313rem;
+    height: 37.5rem auto;
     background-color: #0C0C0B;
     color: white;
-}
 
-footer a{
-    text-decoration: none;
-}
+    a{
+        text-decoration: none;
+    }
 
-.socialMedia{
-    display: flex;
-    justify-content:space-around;
-    margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 58px;
-}
+    .insta{
+        margin-left: -3.90rem;
+    }
+    
+    .youtu{
+        margin-left: -3.560rem;
+    }
+    
+    .outlook{
+        margin-left: -5rem;
+    }
 
-footer p{
-    height: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-shadow: 0px 0px 1px #CCCC;
-    border: 3px solid white;
-    box-shadow: 0px 0px 4px #ccc;
-    background: #f4f7fe;
-    position: absolute;
-    padding: 10px;
-    margin-top: 8px;
-    cursor: pointer;
-    transform: translateY(-80%); 
-    opacity: 0;
-    transition: all 200ms;
-}
+    .icopy{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-.insta{
-    margin-left: -63px;
-}
+    .socialMedia{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 50px;
+        margin-left: 60px;
+        margin-right: 58px;
 
-.youtu{
-    margin-left: -57px;
-}
+        .instagram span:hover{
+            color: #CBAA23;
+        }
 
-.outlook{
-    margin-left: -80px;
-}
+        .email{
+
+            p{
+                height: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-shadow: 0px 0px 1px #CCCC;
+                border: 3px solid white;
+                box-shadow: 0px 0px 4px #ccc;
+                background: #f4f7fe;
+                position: absolute;
+                padding: 10px;
+                margin-top: 8px;
+                transform: translateY(-300%); 
+                opacity: 0;
+                transition: all 200ms;
+            }
+
+            span{
+                &:hover{
+                    color: #CBAA23;
+                    cursor: pointer;
+
+                    p{
+                        opacity: 1;
+                        color: white;
+                        background-color: #4C4746;
+                        transform: translateY(0%);
+                    }
+                }
+            }
+        }
+        
+        .youtube{
+            span{
+                &:hover{
+                    color: #CBAA23;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
 
-.email:hover p{
-    opacity: 1;
-    color: white;
-    background-color: #4C4746;
-    transform: translateY(0%);
-    cursor: unset;
+    
 }
-.email span:hover{
-    color: #CBAA23;
-}
-.instagram span:hover{
-    color: #CBAA23;
-}
-
-.youtube span:hover{
-    color: #CBAA23;
-}
-
 
 .ubication{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     
+    
+    .icon-location{
+        text-align: center;
+        align-self: center;
+        margin-top: 65px;
+        
+        
+    }
+
+    .maps{
+        
+
+        iframe{
+            width: 83.375rem;
+            height: 300px;
+            margin-top: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px gray;
+            border: 5px solid white
+        }
+    }
 }
 
 .icon-instagram,
@@ -189,31 +237,4 @@ footer p{
     color: white;
 }
 
-.icon-location{
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
-}
-
-.ubication iframe{
-    width: 100%;
-    height: 300px;
-    margin-top: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px gray;
-    border: 5px solid white
-}
-
-.maps{
-    display: flex;
-    justify-content: space-around;
-    /* margin-bottom: 5px; */
-    
-}
-
-.icopy{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
 /* FIN ESTILOS FOOTER */
